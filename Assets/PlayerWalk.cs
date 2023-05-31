@@ -85,7 +85,7 @@ public class PlayerWalk : MonoBehaviour
         if (targetSpeed != 0f) /* Acceleration */
         {
             currentSpeed += (targetSpeed * acceleration * Time.fixedDeltaTime);
-            if (currentSpeed > Mathf.Sign(maxSpeed) || currentSpeed < -Mathf.Sign(maxSpeed))
+            if (currentSpeed > maxSpeed || currentSpeed < -maxSpeed)
             {
                 currentSpeed = targetSpeed;
             }
