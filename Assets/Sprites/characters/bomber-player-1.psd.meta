@@ -1,0 +1,2603 @@
+fileFormatVersion: 2
+guid: b08d3f28ab7dc6e4894646e70f61da4d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walkup1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 611
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974ec1b0d83fdf747b59a92531ce90d9
+      internalID: -205678816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkup2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 611
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7235f80667ee655459d4465f654850b6
+      internalID: -1619793958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkup3
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 611
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb29bb843965e94db728bb8885e8eb4
+      internalID: 20808415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_3
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 617
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e14a3acb86dd2418ed7cf1ee6e74a5
+      internalID: -658855838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 617
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6209b41f467a7db449ce21a5e7ad5a04
+      internalID: -704780832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_5
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 619
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45dd2df616a2214fb104ada48ca0161
+      internalID: -2126956456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 617
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2a336de8c14cb47a386eb66e05060e
+      internalID: -786674349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkright1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 579
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ceeda1168425d4c8f42cca457cb798
+      internalID: 44730373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkright2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 579
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9897979d53bcfa94cbc34932399cd2bc
+      internalID: 1965615711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkright3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 579
+        width: 15
+        height: 23
+      alignment: 9
+      pivot: {x: 0.44, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5cd975836ae944fba2e300ef2836f2
+      internalID: -372223600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 584
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ce250c602a0f5439724855fb5dcc47
+      internalID: -715875838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_11
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 584
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051676f5af81f6540b6000f8701a71a7
+      internalID: -1178923731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkdown1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 547
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf3cd307fb1f774e8db8fd411d3f148
+      internalID: -1576955105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkdown2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 547
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc76af057ae8e34f8689d4562644d71
+      internalID: -1599705308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkdown3
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 547
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727ff948b2d2587468e632727c9183f5
+      internalID: -1976188583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_15
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 551
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d628b5c81e866b44bb6d0052d15cfdb3
+      internalID: 1804253002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_16
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 553
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a619455208fcae244850a8f7797a117d
+      internalID: -660897423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_17
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 551
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282e23fcd389b6b49ad268260f9c7668
+      internalID: -1907993894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_18
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 553
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1daf949233658f4c9d287c0dd724966
+      internalID: -1303718294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_22
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 518
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8ae093c9f011e44bb6eee7457a885a
+      internalID: 1553316200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_23
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 519
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79bb18b371159649a79cbdfe60036ca
+      internalID: -520185697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_24
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 520
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade0d92e978b43842847903f5fd53a3c
+      internalID: 1551551484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 483
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: face651e1bf3b7a43a5de3df90ed3167
+      internalID: -624310276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_26
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 483
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5115a4a8ab2c14bbb8cef9ed8b6df7
+      internalID: 1591479512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_27
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 483
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a00347f175268740b670d5a677d9136
+      internalID: -246721246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_28
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 483
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe28cfc4d04dae7469fc62a69e768dab
+      internalID: -878394711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_29
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 485
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9da64f3f593fb4b9ee6c3e469f44bf
+      internalID: 1500171478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_30
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 486
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7094ed627b02ff24c98c712d90e3bfd3
+      internalID: 1129192297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_31
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 487
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6dc83f863822c4cac85e721df40ca5
+      internalID: -437809276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 451
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002c7735d39247446b782af89e3a98c8
+      internalID: -1612189430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_33
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 451
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3a877d84322564c9f414857da0d4ce
+      internalID: -449732302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_34
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 451
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c751a538e34f64249a77f06691e8089d
+      internalID: 348899742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_35
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 451
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209c3e8f4ec249b4fb7120232decabee
+      internalID: -1727196457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_36
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 453
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d970edf429177f748bb6a28db4198e3a
+      internalID: 1199317024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_37
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 454
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869f6bd5436461140b611fa6ada7b0c0
+      internalID: 1103207958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_38
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 456
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1ec1ecb642d784ea5c260c93f5898c
+      internalID: -1713887265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_39
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 417
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec84b26031bc08409199390ffe9eec4
+      internalID: 313030669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_40
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 417
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d0f4b010eb10d4ebd7dc690bb75129
+      internalID: -1485399159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_41
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 417
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6ea7b1cb89dde4884f80ca94db6264
+      internalID: 426214062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_42
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 417
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7748d8be58a5214ba4fe7a0e55d23bf
+      internalID: 576700725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_43
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 421
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e90fc599ea24c4b80ea61ae4edbaf0
+      internalID: -121582413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_44
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 422
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c0ee314f9f6b54e84d12ab00489d5c
+      internalID: 2068250118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_45
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 423
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b170b50a1924ff448ead0865b33dea7
+      internalID: 488709531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 387
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc4064ef891b6e469197bf1d56b16f1
+      internalID: 662666419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 387
+        width: 19
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5000006, y: 0.47992325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088445c6b7d569e458aabbfab00a7f06
+      internalID: 1948679801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 386
+        width: 23
+        height: 26
+      alignment: 9
+      pivot: {x: 0.50000036, y: 0.469108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d6cc99c4c12614e93d826e114126fb
+      internalID: -733157820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_50
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 384
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f38e8abd6a99fb44ab03d7751045d8a
+      internalID: -1345913975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_51
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 384
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7396ad730218d43afefe94b103b440
+      internalID: 1195759658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_55
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 355
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a9b38eafa575a448a73c6afbeb47d1
+      internalID: 1150171782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_56
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 355
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d8489517108d645a01116caa597f0d
+      internalID: -904594411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_57
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 354
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e472585bbcaef8940abda6021a06b4b4
+      internalID: -149647164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_58
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 355
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3b4a2c7bf9de342a4d52887ef2bf29
+      internalID: 932986030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_59
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 352
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64744b837193744aa705ea5c83d35ca
+      internalID: 1763943559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_60
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 352
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d99b0f58d05014fa009e1ee5dbee75
+      internalID: 67028141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_61
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 323
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13c213605adaa146b97a8e254919d5c
+      internalID: -1724100734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_62
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 323
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97d628ef0496c247a4819f028677328
+      internalID: 823976610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_63
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 323
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115d31326e7d4634b9540289a61be740
+      internalID: -1044917634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_64
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 320
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8e0e9b509fa6a41b5d83722337d39a
+      internalID: -783709705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_65
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 320
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648eec13f340cb24aa802844c3af8717
+      internalID: 1225438551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_66
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 291
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea8355068a9035449ee3ffc6f649f61
+      internalID: -1139566730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_67
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 291
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b320ebe392dc04f448fa54613f0a2049
+      internalID: -1526743839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_68
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 291
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b3c40ab8bb52d43bed76a07d4f1862
+      internalID: -1336401864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_69
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 288
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3a1563e30cd1c478155ba5140ee2d7
+      internalID: -2039546598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_70
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 288
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb6d0de6af758c439e3e54aacff8e94
+      internalID: -1273663703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_71
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 259
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da977568a3ea3c6468c0792da93b68f5
+      internalID: 1474906759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_72
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 259
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef456b198b3f574f8a4e93a96d49473
+      internalID: 1808270473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_73
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 259
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a924b652fb109d04098f4e22a53ad770
+      internalID: -424249313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_74
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 262
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a8f46d1272a3b40ac2fc5be3823bb9
+      internalID: -866375934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_75
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 262
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f6b67dcd783b6408630aa4f596e438
+      internalID: 2090758467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_76
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 227
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc322b42ec268f4ca9b9b4439e45e9a
+      internalID: -737328249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_77
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 227
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80570f6a8f9a744c8f2811a4e448c21
+      internalID: -2033555925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_78
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 227
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd23fa1f710b05f449668267a6fced74
+      internalID: 461204229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_79
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 195
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1612a2f859ce00a44942f19afe66facb
+      internalID: -2129835149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_80
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 195
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910c43d052f9ba2469677a039ab8dcb2
+      internalID: 794423511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_81
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 195
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861b78d492945df4db02fc502e12583d
+      internalID: -894775694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_82
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 195
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fdab39c7d464248874f68f66be18ff
+      internalID: 1546216794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_83
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59aba6ab728d2d14eafe08a04ba5b5b6
+      internalID: 715489636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_84
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 166
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf3f26e83a6abe409949d20b5850072
+      internalID: -802350830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_85
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 165
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cdd717070339b408c4d6c44a4c933d
+      internalID: -1090418250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_86
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 165
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be40573270f6fa749b872f81518104a8
+      internalID: -295913048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_87
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 165
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e247992dcbe3e0148baf3c544ebfcbba
+      internalID: 18473846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_88
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 131
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595407c3007a81642b837664a56d55c1
+      internalID: -2066053639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_89
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 150
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc030ea83e5aad47b62c5d7adeab6d8
+      internalID: -1170410328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_90
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 155
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b30b445cdb8e5418062a153b5d9ec3
+      internalID: 213206102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_91
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 141
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92dbf6a3eb399474fa04fcddff3d8e2b
+      internalID: 883969791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_92
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 141
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb01b1772c4da946b99235b7fd9b303
+      internalID: 285411772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_93
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 131
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620e861136510b244b8b32a6cef04b5d
+      internalID: 629375509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_94
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 131
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f315c44573d06744d82a873dfca27fb3
+      internalID: 86167466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_95
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 129
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6482c1afc4f3884c8bd42dfca065abd
+      internalID: 66635821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_96
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 137
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b3b7fd26919464d86e8c3398c1ba18
+      internalID: 1845848920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_97
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 144
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5050cca8743615c4ca0ad538570aedf7
+      internalID: -522781297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_98
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 141
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41361cf404d967e4fb883223ad9f55d1
+      internalID: -517217515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_99
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 97
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec71389014806eb46b0efdf8bde5de6c
+      internalID: -141609598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_100
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 97
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a56d9e38d4cf94daf38d0831b4d023
+      internalID: -963680168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_101
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 97
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861090f9e296b494591d52f7a6a0871e
+      internalID: -737320043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_102
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 97
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a171e7f37b62dcc47976d25c985931cb
+      internalID: 644850871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_103
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 67
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af290184023d8e846b5d2b087a22b7d9
+      internalID: 1972972683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_104
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 67
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfaab13d3771994184827030575a103
+      internalID: -1906312573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_105
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 67
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d114f26864c944f4b8eda07b4f339754
+      internalID: -27001940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_106
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 67
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9111a3c05dcdac5429cda17a41aa4f3c
+      internalID: -269509810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_138
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 35
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0e602ad840b9c40a67870eef14201d
+      internalID: -545365164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_139
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 35
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172a22c5c37790944ba563754c390611
+      internalID: 1245381281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_140
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 35
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff065be50521334ab07846de23d4e52
+      internalID: 1392549957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_141
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 35
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d5e4407b7f74a4782e077419fd0f17
+      internalID: 143434287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_142
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 35
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e691290e2bd2e499dc5dc67f7b424d
+      internalID: 1668983013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_143
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 13
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee297a5be0e90d448d1ff0b49c542b4
+      internalID: 550090994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_144
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 13
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8252d3711f4f0114fbad50edec6d5f6f
+      internalID: 709610268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_145
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 13
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4333d1862d60e74f8226f4e14600628
+      internalID: -2022383651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_146
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 13
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3fd7358c44b9b4e875e337b4e99ec2
+      internalID: 2060666359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomber-player-1_147
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 13
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddadab2a5b2e21448277abcf3f699ca
+      internalID: 388374797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death4
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 393
+        width: 29
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5099243, y: 0.26435634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a8fae07a374b64f9ba2bbd6b3444ea
+      internalID: 293939177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bomber-player-1_10: -715875838
+      bomber-player-1_100: -963680168
+      bomber-player-1_101: -737320043
+      bomber-player-1_102: 644850871
+      bomber-player-1_103: 1972972683
+      bomber-player-1_104: -1906312573
+      bomber-player-1_105: -27001940
+      bomber-player-1_106: -269509810
+      bomber-player-1_107: -74634397
+      bomber-player-1_108: 963256439
+      bomber-player-1_109: -1505957835
+      bomber-player-1_11: -1178923731
+      bomber-player-1_110: 1237165549
+      bomber-player-1_111: -1807850048
+      bomber-player-1_112: -1237440475
+      bomber-player-1_113: 618100149
+      bomber-player-1_114: -1268025188
+      bomber-player-1_115: 1926470317
+      bomber-player-1_116: -954074537
+      bomber-player-1_117: 937063660
+      bomber-player-1_118: 1395703768
+      bomber-player-1_119: -164705482
+      bomber-player-1_120: -1520143306
+      bomber-player-1_121: -2011422095
+      bomber-player-1_122: -496963198
+      bomber-player-1_123: 1343392362
+      bomber-player-1_124: -957846861
+      bomber-player-1_125: 1631625786
+      bomber-player-1_126: 228812319
+      bomber-player-1_127: 714959899
+      bomber-player-1_128: -1879353223
+      bomber-player-1_129: 2094136631
+      bomber-player-1_130: -1981108977
+      bomber-player-1_131: 1441746853
+      bomber-player-1_132: -819756107
+      bomber-player-1_133: 1983522106
+      bomber-player-1_134: -1644601900
+      bomber-player-1_135: 1040946760
+      bomber-player-1_136: 1093254793
+      bomber-player-1_137: 2051995807
+      bomber-player-1_138: -545365164
+      bomber-player-1_139: 1245381281
+      bomber-player-1_140: 1392549957
+      bomber-player-1_141: 143434287
+      bomber-player-1_142: 1668983013
+      bomber-player-1_143: 550090994
+      bomber-player-1_144: 709610268
+      bomber-player-1_145: -2022383651
+      bomber-player-1_146: 2060666359
+      bomber-player-1_147: 388374797
+      bomber-player-1_15: 1804253002
+      bomber-player-1_16: -660897423
+      bomber-player-1_17: -1907993894
+      bomber-player-1_18: -1303718294
+      bomber-player-1_19: -1571144130
+      bomber-player-1_20: 789592565
+      bomber-player-1_21: 1679652620
+      bomber-player-1_22: 1553316200
+      bomber-player-1_23: -520185697
+      bomber-player-1_24: 1551551484
+      bomber-player-1_25: -624310276
+      bomber-player-1_26: 1591479512
+      bomber-player-1_27: -246721246
+      bomber-player-1_28: -878394711
+      bomber-player-1_29: 1500171478
+      bomber-player-1_3: -658855838
+      bomber-player-1_30: 1129192297
+      bomber-player-1_31: -437809276
+      bomber-player-1_32: -1612189430
+      bomber-player-1_33: -449732302
+      bomber-player-1_34: 348899742
+      bomber-player-1_35: -1727196457
+      bomber-player-1_36: 1199317024
+      bomber-player-1_37: 1103207958
+      bomber-player-1_38: -1713887265
+      bomber-player-1_39: 313030669
+      bomber-player-1_4: -704780832
+      bomber-player-1_40: -1485399159
+      bomber-player-1_41: 426214062
+      bomber-player-1_42: 576700725
+      bomber-player-1_43: -121582413
+      bomber-player-1_44: 2068250118
+      bomber-player-1_45: 488709531
+      bomber-player-1_49: 1818871322
+      bomber-player-1_5: -2126956456
+      bomber-player-1_50: -1345913975
+      bomber-player-1_51: 1195759658
+      bomber-player-1_52: 860061795
+      bomber-player-1_53: -1504302844
+      bomber-player-1_54: 113856309
+      bomber-player-1_55: 1150171782
+      bomber-player-1_56: -904594411
+      bomber-player-1_57: -149647164
+      bomber-player-1_58: 932986030
+      bomber-player-1_59: 1763943559
+      bomber-player-1_6: -786674349
+      bomber-player-1_60: 67028141
+      bomber-player-1_61: -1724100734
+      bomber-player-1_62: 823976610
+      bomber-player-1_63: -1044917634
+      bomber-player-1_64: -783709705
+      bomber-player-1_65: 1225438551
+      bomber-player-1_66: -1139566730
+      bomber-player-1_67: -1526743839
+      bomber-player-1_68: -1336401864
+      bomber-player-1_69: -2039546598
+      bomber-player-1_70: -1273663703
+      bomber-player-1_71: 1474906759
+      bomber-player-1_72: 1808270473
+      bomber-player-1_73: -424249313
+      bomber-player-1_74: -866375934
+      bomber-player-1_75: 2090758467
+      bomber-player-1_76: -737328249
+      bomber-player-1_77: -2033555925
+      bomber-player-1_78: 461204229
+      bomber-player-1_79: -2129835149
+      bomber-player-1_80: 794423511
+      bomber-player-1_81: -894775694
+      bomber-player-1_82: 1546216794
+      bomber-player-1_83: 715489636
+      bomber-player-1_84: -802350830
+      bomber-player-1_85: -1090418250
+      bomber-player-1_86: -295913048
+      bomber-player-1_87: 18473846
+      bomber-player-1_88: -2066053639
+      bomber-player-1_89: -1170410328
+      bomber-player-1_90: 213206102
+      bomber-player-1_91: 883969791
+      bomber-player-1_92: 285411772
+      bomber-player-1_93: 629375509
+      bomber-player-1_94: 86167466
+      bomber-player-1_95: 66635821
+      bomber-player-1_96: 1845848920
+      bomber-player-1_97: -522781297
+      bomber-player-1_98: -517217515
+      bomber-player-1_99: -141609598
+      death1: 662666419
+      death2: 1948679801
+      death3: -733157820
+      death4: 293939177
+      walkdown1: -1576955105
+      walkdown2: -1599705308
+      walkdown3: -1976188583
+      walkright1: 44730373
+      walkright2: 1965615711
+      walkright3: -372223600
+      walkup1: -205678816
+      walkup2: -1619793958
+      walkup3: 20808415
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
