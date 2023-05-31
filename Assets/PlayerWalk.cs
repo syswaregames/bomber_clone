@@ -55,7 +55,7 @@ public class PlayerWalk : MonoBehaviour
         animator.SetFloat("xVelocity", rb.velocity.x);
         animator.SetFloat("yVelocity", rb.velocity.y);
     }
-    Vector2 deviateDirectionToAvoidStuck3(Vector2 direction)
+    Vector2 deviateDirectionToAvoidStuck(Vector2 direction)
     {
         if (direction == Vector2.zero)
         {
@@ -101,147 +101,7 @@ public class PlayerWalk : MonoBehaviour
         }
         return direction;
     }
-    Vector2 deviateDirectionToAvoidStuck2(Vector2 direction)
-    {
-        return direction;
-        RaycastHit2D? facingRightHit = null;
-        RaycastHit2D? facingLeftHit = null;
-        RaycastHit2D? facingTopHit = null;
-        RaycastHit2D? facingDownHit = null;
 
-        if (direction.x > 0)
-        {
-            facingRightHit = GetFacingHit(Vector2.right);
-            if (facingRightHit.HasValue)
-            {
-                direction.x = 0f;
-            }
-        }
-        else if (direction.x < 0)
-        {
-            facingLeftHit = facingRightHit = GetFacingHit(Vector2.left);
-            if (facingLeftHit.HasValue)
-            {
-                direction.x = 0f;
-            }
-        }
-
-        if (direction.y > 0)
-        {
-            facingTopHit = GetFacingHit(Vector2.up);
-            if (facingTopHit.HasValue)
-            {
-                direction.y = 0f;
-            }
-        }
-        else if (direction.y < 0)
-        {
-            facingDownHit = facingRightHit = GetFacingHit(Vector2.down);
-            if (facingDownHit.HasValue)
-            {
-                direction.y = 0f;
-            }
-        }
-        return direction;
-        RaycastHit2D? GetFacingHit(Vector2 direction)
-        {
-            var origin = (Vector2)collider.bounds.center;
-            var perpendicular = Vector2.Perpendicular(direction);
-            var centerHit = Physics2DExtended.Raycast(origin, direction, 0.55f, wallLayermask);
-            var leftHit = Physics2DExtended.Raycast(origin - (perpendicular * (collider.radius * toleranceToAvoidStuckness)), direction, 0.55f, wallLayermask);
-            var rightHit = Physics2DExtended.Raycast(origin + (perpendicular * (collider.radius * toleranceToAvoidStuckness)), direction, 0.55f, wallLayermask);
-            return centerHit.collider is not null ? centerHit : leftHit.collider is not null ? leftHit : rightHit.collider is not null ? rightHit : null;
-        }
-
-    }
-    Vector2 deviateDirectionToAvoidStuck(Vector2 direction)
-    {
-
-        var origin = (Vector2)collider.bounds.center;
-        var perpendicular = Vector2.Perpendicular(direction);
-        var centerHit = Physics2DExtended.Raycast(origin, direction, 0.55f, wallLayermask);
-        var leftHit = Physics2DExtended.Raycast(origin - (perpendicular * (collider.radius * toleranceToAvoidStuckness)), direction, 0.55f, wallLayermask);
-        var rightHit = Physics2DExtended.Raycast(origin + (perpendicular * (collider.radius * toleranceToAvoidStuckness)), direction, 0.55f, wallLayermask);
-
-        var facingWallHit = GetFacingWallHit();
-        if (facingWallHit.HasValue)
-        {
-
-            var leftDirection = origin + (perpendicular * -0.6f) - origin;
-            var rightDirection = origin + (perpendicular * 0.6f) - origin;
-            var leftAngleDifference = Vector2.Angle(leftDirection, direction);
-            var rightAngleDifference = Vector2.Angle(leftDirection, direction);
-
-            if (leftAngleDifference < rightAngleDifference)
-            {
-                return leftDirection.normalized * direction.magnitude;
-            }
-            else if (leftAngleDifference > rightAngleDifference)
-            {
-                return rightDirection.normalized * direction.magnitude;
-            }
-
-            if (leftHit.collider is null)
-            {
-                var newDirection = origin + (perpendicular * -0.6f) - origin;
-                var newDirectionWithProportionalMagnitude = newDirection.normalized * direction.magnitude;
-                return newDirectionWithProportionalMagnitude;
-            }
-            else if (rightHit.collider is null)
-            {
-                var newDirection = origin + (perpendicular * 0.6f) - origin;
-                var newDirectionWithProportionalMagnitude = newDirection.normalized * direction.magnitude;
-                return newDirectionWithProportionalMagnitude;
-            }
-        }
-
-        RaycastHit2D? GetFacingWallHit()
-        {
-            return centerHit.collider is not null ? centerHit : leftHit.collider is not null ? leftHit : rightHit.collider is not null ? rightHit : null;
-        }
-
-        return direction;
-    }
-
-    Vector2 deviateDirection(Vector2 testDirection)
-    {
-
-        var result = Physics2D.Raycast(collider.bounds.center, testDirection, 0.55f, wallLayermask);
-        Debug.DrawRay(collider.bounds.center, testDirection * 0.55f, Color.red);
-        if (result.collider is null)
-        {
-            var perpendicular = Vector2.Perpendicular(testDirection);
-            result = Physics2D.Raycast((Vector2)collider.bounds.center + (perpendicular * 0.2f), testDirection, 0.55f, wallLayermask);
-            Debug.DrawRay((Vector2)collider.bounds.center + (perpendicular * 0.2f), testDirection * 0.55f, Color.red);
-
-            if (result.collider is null)
-            {
-                perpendicular = perpendicular * -1;
-                result = Physics2D.Raycast((Vector2)collider.bounds.center + (perpendicular * 0.2f), testDirection, 0.55f, wallLayermask);
-                Debug.DrawRay((Vector2)collider.bounds.center + (perpendicular * 0.2f), testDirection * 0.55f, Color.red);
-            }
-        }
-        if (result.collider is not null)
-        {
-            if (result.normal * -1 == testDirection && (result.normal.x == 0f || result.normal.y == 0f))
-            {
-                return testDirection;
-            }
-
-            var perpendicular = Vector2.Perpendicular(result.normal);
-            print("Eita" + result.normal);
-            print("Perp" + Vector2.Perpendicular(result.normal));
-            Vector3 direcaoDesvio = Vector3.ProjectOnPlane(testDirection, result.normal).normalized;
-            print("Perp" + direcaoDesvio);
-            return direcaoDesvio;
-
-        }
-        else
-        {
-
-        }
-        return testDirection;
-    }
 
     Vector2 clampAxisTo8Directions(Vector2 axis)
     {
@@ -269,9 +129,10 @@ public class PlayerWalk : MonoBehaviour
     }
     void HandleWalk()
     {
-        calculateWalkDirection();
         var axis = clampAxisTo8Directions(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")));
-        axis = deviateDirectionToAvoidStuck3(axis);
+        axis = deviateDirectionToAvoidStuck(axis);
+        calculateWalkDirection(axis);
+
 
         targetXSpeed = axis.x * maxSpeed;
         targetYSpeed = axis.y * maxSpeed;
@@ -291,25 +152,23 @@ public class PlayerWalk : MonoBehaviour
         {
             animator.SetBool("walking", false);
         }
-
-
-        //calculateWalkDirection();
     }
 
-    void calculateWalkDirection()
+    void calculateWalkDirection(Vector2 direction)
     {
 
         var x = rb.velocity.x;
         var y = rb.velocity.y;
-        if (x == 0f && y == 0f)
+
+        if (x == 0f && y == 0f && direction != Vector2.zero)
         {
-            return;
+            x = direction.x;
+            y = direction.y;
         }
         if (Mathf.Abs(x) == Mathf.Abs(y))
         {
             return;
         }
-
 
 
         WalkDirection newWalkDirection = walkDirection;
