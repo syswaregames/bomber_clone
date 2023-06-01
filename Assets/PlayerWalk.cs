@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerWalk : MonoBehaviour
@@ -30,7 +31,12 @@ public class PlayerWalk : MonoBehaviour
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public CircleCollider2D collider;
+    [Header("Bomb")]
+    public GameObject bombPrefab;
+    public float bombTimeLeft = 3f;
+    public int bombSize = 4;
 
+    private List<Collider2D> throwedBombColliders = new();
     // Start is called before the first frame update
     void Start()
     {
@@ -39,8 +45,35 @@ public class PlayerWalk : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetButtonDown("Jump"))
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(WorldUtility.SnapPositionToCenterOfUnit(collider.bounds.center), collider.radius);
+            if (colliders.Where(x => x.GetComponent<Bomb>() is not null).Count() == 0)
+            {
+                var bomb = (GameObject)Instantiate(bombPrefab, collider.bounds.center, Quaternion.identity);
+                bomb.GetComponent<Bomb>().ConfigureBombAndInitiate(bombTimeLeft, bombSize);
+                var bombCollider = bomb.GetComponent<Collider2D>();
+                Physics2D.IgnoreCollision(collider, bombCollider);
+                throwedBombColliders.Add(bombCollider);
+            }
 
-
+        }
+        if (throwedBombColliders.Count > 0)
+        {
+            throwedBombColliders = throwedBombColliders.Where(x => x != null).ToList();
+            var collidersToRemove = new List<Collider2D>();
+            for (int i = 0; i < throwedBombColliders.Count; i++)
+            {
+                Collider2D bombCollider = throwedBombColliders[i];
+                Collider2D[] colliders = Physics2D.OverlapCircleAll(collider.transform.position, collider.radius);
+                if (bombCollider is not null && !colliders.Contains(bombCollider))
+                {
+                    Physics2D.IgnoreCollision(collider, bombCollider, false);
+                    collidersToRemove.Add(bombCollider);
+                }
+            }
+            throwedBombColliders = throwedBombColliders.Except(collidersToRemove).ToList();
+        }
     }
 
     void FixedUpdate()
@@ -271,6 +304,14 @@ public class PlayerWalk : MonoBehaviour
             Debug.DrawRay(contact.point, contact.normal * 0.33f, Color.cyan);
         }
 
+    }
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (throwedBombColliders.Contains(other))
+        {
+            Physics2D.IgnoreCollision(collider, other, false);
+            throwedBombColliders.Remove(collider);
+        }
     }
 
 

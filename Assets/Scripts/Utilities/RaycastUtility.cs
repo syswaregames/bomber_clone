@@ -16,9 +16,17 @@ public static class Physics2DExtended
     public static RaycastHit2D Raycast(Vector2 origin, Vector2 direction, float distance, int layerMask)
     {
         var hit = Physics2D.Raycast(origin, direction, distance, layerMask);
-        Debug.DrawRay(origin, direction * distance, hit.collider is null ? Color.red : Color.blue);
-        if(hit.collider is not null)
-        Debug.DrawRay(hit.point, hit.normal*0.3f, Color.magenta);
+
+        if (hit.collider is not null)
+        {
+            Debug.DrawLine(origin, hit.point, Color.blue);
+            Debug.DrawRay(hit.point, hit.normal * 0.3f, Color.magenta);
+        }
+        else
+        {
+            Debug.DrawRay(origin, direction * distance, hit.collider is null ? Color.red : Color.red);
+        }
+
         return hit;
     }
 }
