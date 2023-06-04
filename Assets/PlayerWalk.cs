@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Newtonsoft.Json;
 
 public class PlayerWalk : MonoBehaviour
 {
@@ -143,9 +144,9 @@ public class PlayerWalk : MonoBehaviour
 
         var newAxis = axis.normalized;
         var angle = Vector2.SignedAngle(Vector2.up, newAxis);
-        print("angle" + angle);
+       // print("angle" + angle);
         var dir = Mathf.RoundToInt(angle / 45f);
-        print("dir" + dir);
+       // print("dir" + dir);
 
         switch (dir)
         {

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Explosion : MonoBehaviour
+public class Explosion : MonoBehaviour, IDamageEmitter
 {
 
     public int explosionSize = 3;
@@ -17,16 +17,21 @@ public class Explosion : MonoBehaviour
     public GameObject segmentLeft;
     public GameObject segmentUp;
     public GameObject segmentDown;
-    public LayerMask layerMask;
+    public LayerMask wallLayerMask;
+    public LayerMask damageableLayerMask;
+
     [Tooltip("Number of animation loops to destroy this object")]
     public int maxLoopCounts = 6;
     public Animator animator;
     [ReadOnly]
     public float timeToDelete = 999f;
     public bool autoExplode;
+    [Serializable]
     public class Teste
     {
-        public Dictionary<string, string> dicionario { get; set; }
+        public enum EInimigo { gato, cachorro, rato, elefante }
+        public List<EInimigo> listaDeEnum = new();
+        public List<List<int>> lista;
     }
 
     public void Start()
@@ -35,7 +40,7 @@ public class Explosion : MonoBehaviour
         {
             ConfigureExplosionAndInitiate(explosionSize, maxLoopCounts);
         }
-        WorldUtility.SnapPositionToCenterOfUnit(transform.position);
+        transform.position = WorldUtility.SnapPositionToCenterOfUnit(transform.position);
     }
 
     public void Update()
@@ -64,7 +69,7 @@ public class Explosion : MonoBehaviour
 
         void HandleDirection(GameObject segment, GameObject cap, Vector2 direction)
         {
-            var hit = Physics2DExtended.Raycast(transform.position, direction, 20, layerMask);
+            var hit = Physics2DExtended.Raycast(transform.position, direction, 20, wallLayerMask);
             if (hit.collider is not null)
             {
                 var targetSize = Mathf.RoundToInt((hit.point - (Vector2)transform.position).magnitude - 0.5f);
@@ -81,8 +86,27 @@ public class Explosion : MonoBehaviour
                 segment.GetComponent<SpriteRenderer>().size = new Vector2(1, targetSize);
                 segment.GetComponent<BoxCollider2D>().size = new Vector2(1, targetSize);
                 segment.transform.position = transform.position + ((Vector3)direction.normalized * 0.5f) + ((Vector3)direction.normalized * (targetSize * 0.5f));
+
+                DestructibleBlock destructibleBlock = hit.collider.GetComponent<DestructibleBlock>();
+                if(destructibleBlock is not null) {
+                    destructibleBlock.DestroyIt();
+                }
             }
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (wallLayerMask.Contains(col.gameObject.layer) || damageableLayerMask.Contains(col.gameObject.layer))
+        {
+            var damageableComponent = col.gameObject.GetComponent<IDamageTaker>();
+            if (damageableComponent is not null)
+            {
+                damageableComponent.TakeDamage(new DamageEmissionDto(emitter: this, damage: 5));
+            }
+        }
+
+
     }
 }
 
