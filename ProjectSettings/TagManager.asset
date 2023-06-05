@@ -12,11 +12,11 @@ TagManager:
   - Water
   - UI
   - HitBoxes
-  - 
-  - 
-  - 
-  - 
-  - 
+  - characters
+  - Destructible
+  - Bomb
+  - Egg
+  - Player
   - 
   - 
   - 

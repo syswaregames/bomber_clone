@@ -69,7 +69,7 @@ public class Explosion : MonoBehaviour, IDamageEmitter
 
         void HandleDirection(GameObject segment, GameObject cap, Vector2 direction)
         {
-            var hit = Physics2DExtended.Raycast(transform.position, direction, 20, wallLayerMask);
+            var hit = Physics2DExtended.Raycast(transform.position, direction, explosionSize + 0.1f, wallLayerMask);
             if (hit.collider is not null)
             {
                 var targetSize = Mathf.RoundToInt((hit.point - (Vector2)transform.position).magnitude - 0.5f);
@@ -88,9 +88,19 @@ public class Explosion : MonoBehaviour, IDamageEmitter
                 segment.transform.position = transform.position + ((Vector3)direction.normalized * 0.5f) + ((Vector3)direction.normalized * (targetSize * 0.5f));
 
                 DestructibleBlock destructibleBlock = hit.collider.GetComponent<DestructibleBlock>();
-                if(destructibleBlock is not null) {
+                if (destructibleBlock is not null)
+                {
                     destructibleBlock.DestroyIt();
                 }
+            }
+            else
+            {
+                var sectionSize = explosionSize - 1;
+                segment.GetComponent<SpriteRenderer>().size = new Vector2(1, sectionSize);
+                segment.GetComponent<BoxCollider2D>().size = new Vector2(1, sectionSize);
+                segment.transform.position = transform.position + ((Vector3)direction.normalized * 0.5f) + ((Vector3)direction.normalized * (sectionSize * 0.5f));
+                cap.SetActive(true);
+                cap.transform.position = transform.position + ((Vector3)direction.normalized) + ((Vector3)direction.normalized * (sectionSize));
             }
         }
     }

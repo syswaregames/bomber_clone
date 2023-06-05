@@ -22,6 +22,7 @@ public class DestructibleBlock : MonoBehaviour
         if (isDestroying)
             return;
 
+        isDestroying = true;
         StartCoroutine(DestroyItCo());
     }
     bool isDestroying;

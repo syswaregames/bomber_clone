@@ -1066,7 +1066,7 @@ MonoBehaviour:
     m_Bits: 8
   damageableLayerMask:
     serializedVersion: 2
-    m_Bits: 384
+    m_Bits: 896
   maxLoopCounts: 6
   animator: {fileID: 7841085448145373461}
   timeToDelete: 999
