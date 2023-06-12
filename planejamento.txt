@@ -1,0 +1,49 @@
+Layers: Wall, DestructibleBlock, Stair, Hitbox, Player, Enemy,  Bomb, Items, Eggs
+
+Somente a layer hitbox emitirá dano. E todos, incluindo players ou inimigos possuirão hitboxes nessa layer.
+	Colidirá com player, inimigo, bloco destrutivo, itens. Porem, o script do emissor decidirá se enviará dano ou não. Desta forma posso ter um controle fino sobre pra onde emitir danos, e ao mesmo tempo não fico perdido na massaroca de colisões. Tive dificuldades em estabelecer layers pra cada coisa, então isto resolve o problema por definitivo.
+
+
+Player
+    colide com:
+        Parede, Bloco destrutivel, Bomba.
+    Não colide com:
+        Inimigos, Itens, Outros players, escada
+    Player dispara hit com:
+        Somente layer hitbox.
+
+Inimigo
+    Colide com:
+        Parede, Bloco destrutivel, Bomba.
+    Dispara hit com:
+        Somente layer hitbox.
+    Não colide com:
+        Players, Itens, outros inimigos.
+
+Bomba 
+    Colide com:
+        Parede, Bloco destrutivel, Bomba.
+    Não colide com:
+        Itens, escadas
+    Dispara hit com:
+        Somente layerhibox.
+
+Explosão (layer hitbox)
+    Colide com:
+        Parede, Bloco destrutivel, Escadas
+    Dispara hit com:
+        Player, Inimigo, Bomba, Itens, Ovos
+
+Ovos:
+    Colide com:
+        Parede, bloco destrutivel, bomba
+    Não colide com:
+        Players, itens e outros inimigos
+    Dispara hit com:
+        Somente layer hitbox. Sim mesmo pra pegar o ovo será por meio da hitbox.
+
+Powerup:
+    Não colide com:
+        Todos.
+    Dispara hit com:
+        Somente layerhitbox

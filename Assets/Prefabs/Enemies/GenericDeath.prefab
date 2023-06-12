@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7201099579860745211}
   - component: {fileID: 196039233286562566}
   - component: {fileID: 8418779151748484126}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GenericDeath
   m_TagString: Untagged
   m_Icon: {fileID: 0}

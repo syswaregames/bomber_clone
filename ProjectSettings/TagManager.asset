@@ -8,17 +8,17 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - wall
+  - Wall
   - Water
   - UI
-  - HitBoxes
-  - characters
-  - Destructible
+  - Hitbox
+  - Stair
+  - Destructible Block
   - Bomb
   - Egg
   - Player
-  - 
-  - 
+  - Enemy
+  - Item
   - 
   - 
   - 
