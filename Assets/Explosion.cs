@@ -84,7 +84,7 @@ public class Explosion : MonoBehaviour, IDamageEmitter
                     cap.SetActive(false);
                 }
                 segment.GetComponent<SpriteRenderer>().size = new Vector2(1, targetSize);
-                segment.GetComponent<BoxCollider2D>().size = new Vector2(1, targetSize);
+                segment.GetComponent<BoxCollider2D>().size = new Vector2(0.9f, targetSize); //0.9 porque se for 1 vai colidir em bombas que vc não quer que colida
                 segment.transform.position = transform.position + ((Vector3)direction.normalized * 0.5f) + ((Vector3)direction.normalized * (targetSize * 0.5f));
 
                 DestructibleBlock destructibleBlock = hit.collider.GetComponent<DestructibleBlock>();
@@ -97,7 +97,7 @@ public class Explosion : MonoBehaviour, IDamageEmitter
             {
                 var sectionSize = explosionSize - 1;
                 segment.GetComponent<SpriteRenderer>().size = new Vector2(1, sectionSize);
-                segment.GetComponent<BoxCollider2D>().size = new Vector2(1, sectionSize);
+                segment.GetComponent<BoxCollider2D>().size = new Vector2(0.9f, sectionSize);
                 segment.transform.position = transform.position + ((Vector3)direction.normalized * 0.5f) + ((Vector3)direction.normalized * (sectionSize * 0.5f));
                 cap.SetActive(true);
                 cap.transform.position = transform.position + ((Vector3)direction.normalized) + ((Vector3)direction.normalized * (sectionSize));

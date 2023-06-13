@@ -33,12 +33,13 @@ public class BasicEnemy : MonoBehaviour, IDamageTaker, IDamageEmitter
 
         while (freeDirection == Vector2.zero)
         {
+            animator.SetBool("walking", false);
             yield return new WaitForSeconds(1f);
             freeDirection = GetFreeDirection();
         }
 
 
-
+        animator.SetBool("walking", true);
         if (freeDirection == Vector2.right)
         {
             animator.SetInteger("walkDirection", (int)PlayerWalk.WalkDirection.right);
@@ -64,6 +65,7 @@ public class BasicEnemy : MonoBehaviour, IDamageTaker, IDamageEmitter
             rb.velocity = freeDirection * speed;
             yield return new WaitForEndOfFrame();
         }
+        animator.SetBool("walking", false);
         transform.position = WorldUtility.SnapPositionToCenterOfUnit(transform.position);
         yield return new WaitForEndOfFrame();
         yield return new WaitForSeconds(waitBeforeChangeDirection);

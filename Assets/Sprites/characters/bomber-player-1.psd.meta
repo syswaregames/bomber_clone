@@ -714,7 +714,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber-player-1_32
+      name: mounted-up
       rect:
         serializedVersion: 2
         x: 9
@@ -735,7 +735,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber-player-1_33
+      name: mounted-right
       rect:
         serializedVersion: 2
         x: 40
@@ -756,7 +756,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber-player-1_34
+      name: mounted-down
       rect:
         serializedVersion: 2
         x: 73
@@ -777,7 +777,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber-player-1_35
+      name: mounted-left
       rect:
         serializedVersion: 2
         x: 104
@@ -861,7 +861,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber-player-1_39
+      name: mounting-up
       rect:
         serializedVersion: 2
         x: 9
@@ -882,7 +882,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber-player-1_40
+      name: mounting-right
       rect:
         serializedVersion: 2
         x: 40
@@ -903,7 +903,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber-player-1_41
+      name: mounting-down
       rect:
         serializedVersion: 2
         x: 73
@@ -924,7 +924,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomber-player-1_42
+      name: mounting-left
       rect:
         serializedVersion: 2
         x: 98
@@ -2514,18 +2514,10 @@ TextureImporter:
       bomber-player-1_3: -658855838
       bomber-player-1_30: 1129192297
       bomber-player-1_31: -437809276
-      bomber-player-1_32: -1612189430
-      bomber-player-1_33: -449732302
-      bomber-player-1_34: 348899742
-      bomber-player-1_35: -1727196457
       bomber-player-1_36: 1199317024
       bomber-player-1_37: 1103207958
       bomber-player-1_38: -1713887265
-      bomber-player-1_39: 313030669
       bomber-player-1_4: -704780832
-      bomber-player-1_40: -1485399159
-      bomber-player-1_41: 426214062
-      bomber-player-1_42: 576700725
       bomber-player-1_43: -121582413
       bomber-player-1_44: 2068250118
       bomber-player-1_45: 488709531
@@ -2586,6 +2578,14 @@ TextureImporter:
       death2: 1948679801
       death3: -733157820
       death4: 293939177
+      mounted-down: 348899742
+      mounted-left: -1727196457
+      mounted-right: -449732302
+      mounted-up: -1612189430
+      mounting-down: 426214062
+      mounting-left: 576700725
+      mounting-right: -1485399159
+      mounting-up: 313030669
       walkdown1: -1576955105
       walkdown2: -1599705308
       walkdown3: -1976188583

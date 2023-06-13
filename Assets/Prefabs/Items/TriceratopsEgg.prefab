@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9005181648018827594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6863935883996920700}
+  - component: {fileID: 5622454985182340345}
+  m_Layer: 6
+  m_Name: hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6863935883996920700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005181648018827594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9056947211298482105}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &5622454985182340345
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005181648018827594}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &9056947211298482085
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,6 +62,7 @@ GameObject:
   - component: {fileID: 9056947211298482084}
   - component: {fileID: 9056947211298482111}
   - component: {fileID: 9056947211298482104}
+  - component: {fileID: 6963442509221402265}
   m_Layer: 10
   m_Name: TriceratopsEgg
   m_TagString: Untagged
@@ -32,7 +81,8 @@ Transform:
   m_LocalPosition: {x: -2.3919907, y: 3.5776455, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6863935883996920700}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -121,6 +171,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructionEffectPrefab: {fileID: 8821327342987855986, guid: 34dc9695845d2b64499ee59d3068e588, type: 3}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  ridableAnimalGameObject: {fileID: -5006865530778447521, guid: 98e8754d503edf44cba4b3437011e401, type: 3}
+  ridableInstantiationDelay: 0.2
+  collider: {fileID: 9056947211298482104}
+  hitboxCollider: {fileID: 5622454985182340345}
+  spriteRenderer: {fileID: 9056947211298482106}
 --- !u!50 &9056947211298482111
 Rigidbody2D:
   serializedVersion: 4
@@ -158,3 +216,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.48
+--- !u!114 &6963442509221402265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056947211298482085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48435c07f86b0c843b273dcb5459b8da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 9056947211298482106}
+  pivotTransform: {fileID: 9056947211298482105}
+  minY: -100
+  maxY: 100
+  minSorting: 0
+  maxSorting: 32767
+  YOffset: 0
