@@ -62,11 +62,13 @@ public class Egg : MonoBehaviour, IDamageTaker
 
         var mountableObj = Instantiate(ridableAnimalGameObject.gameObject, WorldUtility.SnapPositionToCenterOfUnit(transform.position), Quaternion.identity);
         var mountableComponent = mountableObj.GetComponent<MountableController>();
+        mountableComponent.SetWalkDirectionFromExternalMounting(bomber.walkDirection, bomber.invertFlip? !bomber.spriteRenderer.flipX: bomber.spriteRenderer.flipX);
         mountableObj.SetActive(false);
         bomber.StartMounting(mountableComponent);
 
         yield return new WaitForSeconds(ridableInstantiationDelay);
         mountableObj.SetActive(true);
+          mountableComponent.SetWalkDirectionFromExternalMounting(bomber.walkDirection, bomber.invertFlip? !bomber.spriteRenderer.flipX: bomber.spriteRenderer.flipX);
         mountableComponent.playable = true;
         mountableComponent.rider = bomber;
         Destroy(gameObject);

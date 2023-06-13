@@ -335,27 +335,30 @@ public class BomberController : MonoBehaviour
         animator.SetBool("mounting", true);
         rb.isKinematic = true;
         rb.simulated = false;
-        var lerpTime = 0f;
-        var lerpDuration = mountingLerpDuration;
-        var startPosition = transform.position;
         var sortingController = GetComponent<SortingPerspectiveController>();
         if (sortingController is not null)
         {
             sortingController.enabled = false;
         }
+
+        var lerpTime = 0f;
+        var lerpDuration = mountingLerpDuration;
+        var startPosition = transform.position;
+
         while (lerpTime < lerpDuration)
         {
             lerpTime += Time.deltaTime;
             var normalizedTime = lerpTime / lerpDuration;
             var lerpPosition = Vector3.Lerp(startPosition, mountable.transform.position + (Vector3)mountable.mountOffset, normalizedTime);
-    
+
             var jumpY = mountingJumpHeight * Mathf.Sin(normalizedTime * Mathf.PI);
             transform.position = new Vector3(lerpPosition.x, lerpPosition.y + jumpY, transform.position.z);
             yield return new WaitForEndOfFrame();
         }
+        transform.position = mountable.transform.position + (Vector3)mountable.mountOffset;
+        
         animator.SetBool("mounting", false);
         animator.SetBool("mounted", true);
-        transform.position = mountable.transform.position + (Vector3)mountable.mountOffset;
         transform.parent = mountable.transform;
 
         yield return new WaitForEndOfFrame();

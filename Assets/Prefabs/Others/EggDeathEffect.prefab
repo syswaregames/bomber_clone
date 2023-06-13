@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4890204446742438030}
   - component: {fileID: 6118014656857560939}
   - component: {fileID: 8634595760989722731}
+  - component: {fileID: -3844854563552731875}
   m_Layer: 0
   m_Name: EggDeathEffect
   m_TagString: Untagged
@@ -118,3 +119,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-3844854563552731875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821327342987855986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48435c07f86b0c843b273dcb5459b8da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 4890204446742438030}
+  pivotTransform: {fileID: 7195635485831272954}
+  minY: -100
+  maxY: 100
+  minSorting: 0
+  maxSorting: 32767
+  YOffset: 0
